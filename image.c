@@ -12,8 +12,8 @@ ImagePPM *readPPM(char *filename) {
 
   ImagePPM *pImagePPM = malloc(sizeof(ImagePPM));
   fscanf(ImageFile, "%s", pImagePPM->magic);
-  fscanf(ImageFile, "%d", &pImagePPM->width); // num of columns
-  fscanf(ImageFile, "%d", &pImagePPM->height); //num of rows
+  fscanf(ImageFile, "%d", &pImagePPM->width);
+  fscanf(ImageFile, "%d", &pImagePPM->height);
   fscanf(ImageFile, "%d", &pImagePPM->max_value);
 
   pImagePPM->pixels = malloc(sizeof(Pixel *) * pImagePPM->height);
@@ -39,9 +39,7 @@ int writePGM(ImagePGM *pImagePGM, char *filename) {
 
   FILE *ImageFile=fopen(filename,"w");
 
-  if (ImageFile == NULL) {
-    return 0;
-  }
+  if (ImageFile == NULL) return 0;
 
   fprintf(ImageFile, "%s %d %d %d\n", pImagePGM->magic, pImagePGM->width, pImagePGM->height, pImagePGM->max_value);
 
