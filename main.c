@@ -1,9 +1,11 @@
+// based on https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 
-#include "image.h"
 #include "image.c"
+
 char *methods[6] = { "red", "green", "blue", "average", "lightness", "luminosity"};
 
 // return -1 for an invalid method

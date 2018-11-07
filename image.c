@@ -1,11 +1,30 @@
-// Given a filename of a ppm image, read in the image and
-// store it in the ImagePPM structure. Return the address ofs
-// the ImagePPM structure if the file can be opened or
-// NULL otherwise.
+typedef struct _pixel {
+  int red;
+  int green;
+  int blue;
+} Pixel;
+
+typedef struct _imagePPM {
+	char magic[3];  // magic identifier, "P3"
+  int width;      // columns
+  int height;     // rows
+  int max_value;  // maximum intensity
+  Pixel **pixels; // pixel data
+} ImagePPM;
+
+typedef struct _imagePGM {
+	char magic[3];  // magic identifier, "P2"
+  int width;      // columns
+  int height;     // rows
+  int max_value;  // maximum grayscale intensity
+  int **pixels;   // grayscale pixel data
+} ImagePGM;
+
 ImagePPM *readPPM(char *filename) {
 
   FILE *ImageFile=fopen(filename,"r");
 
+  // image not found
   if (ImageFile == NULL) {
     return 0;
   }
@@ -32,9 +51,6 @@ ImagePPM *readPPM(char *filename) {
   return pImagePPM;
 }
 
-// Write out a pgm image stored in a ImagePGM structure into
-// the specified file. Return 1 if writing is successful or
-// 0 otherwise.
 int writePGM(ImagePGM *pImagePGM, char *filename) {
 
   FILE *ImageFile=fopen(filename,"w");
@@ -53,7 +69,6 @@ int writePGM(ImagePGM *pImagePGM, char *filename) {
   return 1;
 }
 
-// Convert a ppm image into a pgm image.
 // grayscale = R
 ImagePGM *extractRed(ImagePPM *pImagePPM) {
 
@@ -201,14 +216,12 @@ ImagePGM *computeLuminosity(ImagePPM *pImagePPM) {
 
   return pImagePGM;
 }
-// based on https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
 
-// Free the space used by a ppm image.
 void freeSpacePPM(ImagePPM *pImagePPM) {
   free(pImagePPM);
   return;
 }
-// Free the space used by a pgm image.
+
 void freeSpacePGM(ImagePGM *pImagePGM) {
   free(pImagePGM);
   return;
