@@ -1,5 +1,3 @@
-// based on https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
