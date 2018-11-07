@@ -16,3 +16,5 @@ To run the program, first download the zip file and extacrt. Afterwards, direct 
 
 ## Inspiration
 This project and the algorithm is from https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
+
+*by Namito Yokota.*
