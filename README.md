@@ -14,5 +14,5 @@ In 'image.c', I used structures for PPM, PGM, as well as pixels. So each of the 
 ## Steps
 To run the program, first download the zip file and extacrt. Afterwards, direct to the folder in terminal and run the make file. This will produce PGM files for the default PPM file, 'Strawberry.ppm'. In order to add PPM files of your choice, simply drag the PPM file to the directory and open the makefile. In make, change 'Strawbeery.ppm' to the file name of the new PPM file that you imported and change al of the output file names of your choice. 
 
-### Inspiration
+## Inspiration
 This project and the algorithm is from https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
