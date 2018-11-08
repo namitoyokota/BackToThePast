@@ -2,6 +2,8 @@
 <p align="right">by Namito Yokota</p>
 This is my first project working with PPM files and PGM files. For this project, I developed a program that produces six different color to black and white conversion using a PPM image file.
 
+![alt text](https://raw.githubusercontent.com/namitoyokota/Color-toGray/master/Strawberry.ppm)
+
 ## Basic Concept
 This project has two files: 'main.c' and 'image.c'. 
 In 'image.c', I used structures for PPM, PGM, as well as pixels. So each of the PPM image (input), has a structure developed through readPPM function which has information like the width, height, rgb numbers using the pixels structure, and more. Then, by using one of the functions (extractRed, extractGreen, extractBlue, computeAverage, computeLightness, computeLuminosity), we then create a structure PGM with grayscale numbers as pixels. After all, we then use the writePGM file to write variables stored in the PGM structure to a new PGM file.
