@@ -14,7 +14,7 @@ In 'image.c', I used structures for PPM, PGM, as well as pixels. So each of the 
 ## Steps
 To run the program, first download the zip file and extacrt. Afterwards, direct to the folder in terminal and run the make file.
 
-```terminal
+```
 cd Color-to-Gray
 make
 ```
