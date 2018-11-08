@@ -2,7 +2,7 @@
 *<p align="right">by Namito Yokota</p>*
 This is my first project working with PPM files and PGM files. For this project, I developed a program that produces six different color to black and white conversion using a PPM image file.
 
-![alt text](Strawberry.ppm "Before")
+![alt text](/Screenshots/Strawberry.png "Before")
 
 ## Basic Concept
 This project has two files: 'main.c' and 'image.c'. 
