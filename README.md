@@ -2,10 +2,10 @@
 *<p align="right">by Namito Yokota</p>*
 This is my first project working with PPM files and PGM files. For this project, I developed a program that produces six different color to black and white conversion using a PPM image file.
 
-![alt text](/Screenshots/Strawberry.png "Before")
-![alt text](/Screenshots/Strawberry_Red.png "Before")
-![alt text](/Screenshots/Strawberry_Green.png "Before")
-![alt text](/Screenshots/Strawberry_Blue.png "Before")
+![Before](/Screenshots/Strawberry.png "Before")
+![Red](/Screenshots/Strawberry_Red.png "Red")
+![Green](/Screenshots/Strawberry_Green.png "Green")
+![Blue](/Screenshots/Strawberry_Blue.png "Blue")
 
 ## Basic Concept
 This project has two files: 'main.c' and 'image.c'. 
@@ -13,6 +13,11 @@ In 'image.c', I used structures for PPM, PGM, as well as pixels. So each of the 
 
 ## Steps
 To run the program, first download the zip file and extacrt. Afterwards, direct to the folder in terminal and run the make file. This will produce PGM files for the default PPM file, 'Strawberry.ppm'. In order to add PPM files of your choice, simply drag the PPM file to the directory and open the makefile. In make, change 'Strawbeery.ppm' to the file name of the new PPM file that you imported and change al of the output file names of your choice. 
+
+```terminal
+cd Color-to-Gray
+make
+```
 
 ## Tools used
   - Visual Studio Code
