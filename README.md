@@ -28,3 +28,9 @@ This will produce PGM files for the default PPM file, 'Strawberry.ppm'. In order
 
 ## Inspiration
 This project and the algorithm is from https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/
+
+## What I learned
+Through working on this porject, I learned
+  - PPM and PGM image file formats
+  - file inputs and outputs
+  - using structures in C
