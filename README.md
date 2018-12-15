@@ -23,7 +23,7 @@ This will produce PGM files for the default PPM file, 'Strawberry.ppm'. In order
 
 OR
 
-In order to use your own PPM to create grayscale pictures, move your PPM image to 'Color-to-Gray' directory and go into makefile. In there, change 'Stawberry.ppm' to the name of your PPM file, and change the output file names to whatever you choose. Then, run makefile with
+In order to use your own PPM to create grayscale pictures, move your PPM image to 'Color-to-Gray' directory and go into makefile. In there, change 'Stawberry.ppm' to the name of your PPM file, and change the output file names to whatever you choose. Then, in terminanl, run makefile with
 
 ```
 make
