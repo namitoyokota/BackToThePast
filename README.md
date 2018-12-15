@@ -21,6 +21,14 @@ make
 
 This will produce PGM files for the default PPM file, 'Strawberry.ppm'. In order to add PPM files of your choice, simply drag the PPM file to the directory and open the makefile. In make, change 'Strawbeery.ppm' to the file name of the new PPM file that you imported and change al of the output file names of your choice. 
 
+OR
+
+In order to use your own PPM to create grayscale pictures, move your PPM image to 'Color-to-Gray' directory and go into makefile. In there, change 'Stawberry.ppm' to the name of your PPM file, and change the output file names to whatever you choose. Then, run makefile with
+
+```
+make
+```
+
 ## Tools used
   - Visual Studio Code
   - Terminal
