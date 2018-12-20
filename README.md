@@ -1,10 +1,10 @@
 # Color-to-Gray
 This is my first project working with PPM files and PGM files. For this project, I developed a program that produces six different color to black and white conversion using a PPM image file.
 
-![Before](/Screenshots/Strawberry.png "Before")
-![Red](/Screenshots/Strawberry_Red.png "Red")
-![Green](/Screenshots/Strawberry_Green.png "Green")
-![Blue](/Screenshots/Strawberry_Blue.png "Blue")
+![Before](/screenshots/Strawberry.png "Before")
+![Red](/screenshots/Strawberry_Red.png "Red")
+![Green](/screenshots/Strawberry_Green.png "Green")
+![Blue](/screenshots/Strawberry_Blue.png "Blue")
 
 ## Basic Concept
 This project has two files: 'main.c' and 'image.c'. 
