@@ -1,17 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-#include "image.c"
-
-char *methods[6] = { "red", "green", "blue", "average", "lightness", "luminosity"};
-
-// return -1 for an invalid method
-int getMethodID(char *method) {
-	for (int i=0; i<6; i++)
-		if (strcmp(method, methods[i])==0) return i;
-	return -1;
-}
+#include "../lib/main.h"
 
 int main(int argc, char **argv) {
 
@@ -70,4 +57,11 @@ int main(int argc, char **argv) {
 	freeSpacePGM(pImagePGM);
 
   return 0;
+}
+
+// return -1 for an invalid method
+int getMethodID(char *method) {
+	for (int i=0; i<6; i++)
+		if (strcmp(method, methods[i])==0) return i;
+	return -1;
 }

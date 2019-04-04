@@ -6,3 +6,5 @@ a.out
 
 # custom attributes
 .DS_Store
+
+*.o

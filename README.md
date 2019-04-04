@@ -17,10 +17,10 @@ OR
 In order to use your own PPM to create grayscale pictures, move your PPM image to 'BackToThePast' directory and go into makefile. In there, change 'Stawberry.ppm' to the name of your PPM file, and change the output file names to whatever you choose. Then, in terminanl, run makefile with `make`.
 
 ## Screenshots
-![Before](/Screenshots/Strawberry.png "Before")
-![Red](/Screenshots/Strawberry_Red.png "Red")
-![Green](/Screenshots/Strawberry_Green.png "Green")
-![Blue](/Screenshots/Strawberry_Blue.png "Blue")
+![Before](/screenshots/Strawberry.png "Before")
+![Red](/screenshots/Strawberry_Red.png "Red")
+![Green](/screenshots/Strawberry_Green.png "Green")
+![Blue](/screenshots/Strawberry_Blue.png "Blue")
 
 ## Resources
-This project and the algorithm is from <a href="https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/">John Cook</a>
+The algorithm used for the grayscale operation is from <a href="https://www.johndcook.com/blog/2009/08/24/algorithms-convert-color-grayscale/">John Cook</a>
