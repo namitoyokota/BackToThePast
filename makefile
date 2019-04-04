@@ -7,6 +7,9 @@ all: main
 main : $(OBJS)
 	gcc $(LOPTS) $(OBJS) -o ./bin/main
 
+blur :
+brightness : 
+contrast : 
 grayscale : 
 	./bin/main red ./img/input/Strawberry.ppm ./img/output/Strawberry_Red.pgm
 	./bin/main green ./img/input/Strawberry.ppm ./img/output/Strawberry_Green.pgm
@@ -33,5 +36,8 @@ brightness.o : ./src/brightness.c ./lib/brightness.h
 blur.o : ./src/blur.c ./lib/blur.h
 		gcc $(OOPTS) ./src/blur.c
 
+setup : 
+		## create new directories
+help : 
 clean :
 		rm -f $(OBJS) ./bin/main
