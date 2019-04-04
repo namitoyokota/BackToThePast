@@ -3,14 +3,14 @@
 int main(int argc, char **argv) {
 
   if (argc != 4) {
-		printf("Usage: %s <method> ppm_filename pgm_filename\n", argv[0]);
+		printf("Usage: %s <method> ppm_filename_path pgm_filename_path\n", argv[0]);
     printf("Valid methods:\n");
 		for (int i=0; i<6; i++)
-			printf("\t%s\n", methods[i]);
+			printf("\t%s\n", grayscale[i]);
     return 1;
   }
 
-	int method_id=getMethodID(argv[1]);
+	int method_id = getMethodID(argv[1]);
 
 	if (method_id<0) {
     printf("Invalid method: %s\n", argv[1]);
@@ -62,6 +62,6 @@ int main(int argc, char **argv) {
 // return -1 for an invalid method
 int getMethodID(char *method) {
 	for (int i=0; i<6; i++)
-		if (strcmp(method, methods[i])==0) return i;
+		if (strcmp(method, grayscale[i])==0) return i;
 	return -1;
 }
