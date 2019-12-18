@@ -1,12 +1,8 @@
-# output files
-*.pgm
-
-# executable
-a.out
-
 # custom attributes
 .DS_Store
-
-*.o
-
 .vscode/*
+
+# created directories and files
+bin/*
+*.o
+a.out
